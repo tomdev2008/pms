@@ -1,0 +1,28 @@
+/* CSS Document */
+
+/*clear and publick ========*/
+body{font:normal 12px/1.8em Arial, Helvetica, sans-serif; background:#f5f5f5}
+body,div,p,ul,ol,li,dl,dt,dd,span,h1,h2,h3,h4,h5,input{margin:0; padding:0;}
+ul,ol,li,dl,dt,dd{list-style:none}
+a{text-decoration:none; color:#000}
+img{border:none;}
+.l_black{color:#777777}.green{color:#4f8500}.red{color:#c72525}
+.t12{font-size:12px}.t14{font-size:14px}.t16{font-size:16px}
+.fl{ float:left;}.fr{float:right;}
+.cl{clear:both;}
+.tc{text-align:center}.tr{text-align:right}.hide{display:none}
+.clear{height:1px; font-size:1px; overflow:hidden; clear:both}
+
+
+.global{width:100%; height:100%; overflow:hidden; position:relative;}
+.main{margin:10px}
+h1{font-size:18px; color:#000; font-weight:bold; line-height:1.4em; padding:10px 0px 3px}
+h2{font-size:13px; color:#999; font-weight:normal; text-shadow:0px 1px #fff; padding:0px 0px 5px}
+.cnt,.cnt p{font-size:14px; color:#222; line-height:1.5em; text-shadow:0px 1px #fff;}
+.cnt p{margin-bottom:10px; text-indent:2em;}
+.cnt img,.cnt p img{width:100%;}
+.cnt p img{margin-left:-2em}
+.loadbox{padding:8px 0px; font-size:14px; width:100%; text-align:center}
+span.loading{width:18px; height:18px; overflow:hidden; vertical-align:middle;}
+span.loading img{width:18px; height:18px;}
+/*clear and publick end*/

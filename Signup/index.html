@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>注册云掌柜</title>
+<link href="../css/signup-ret=121206.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script type="text/javascript" src="../jsmin/mobile-detect.min.js"></script>
+</head>
+<body>
+<div class="W_bg">
+    <!--back-->
+    <div id="back_header" class="g-header" style="display: none;">
+        <div class="main">
+            <a href="javascript:void(0);" class="icon return" id="returnurl"></a>
+            <strong>注册云掌柜</strong>
+        </div>
+    </div>
+    <!--/back-->
+    <!--header-->
+    <div id="header" class="shadow10">
+        <h1 class="length clx">
+        <a href="../Login.html" class="logo" title="回首页"></a>
+            <span class="slogan">民宿管理好帮手</span>
+        </h1>
+    </div>
+    <!--end header-->
+    
+    <!--intro-->
+    <div id="content">
+        <div class="main">
+            <div class="main_cnt">
+                <div class="reg_box">
+                    <h1>注册云掌柜</h1>
+                    <h2>与 <span class="t14 seagreen"> 112784</span> 家民宿一起使用云掌柜</h2>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="innform">
+                        <tr>
+                            <th class="title">民宿名称</th>
+                            <td class="input">
+                                <input class="inputbox" name="innname" value="" placeholder="如：杭州小筑民宿" />
+                                <p class="orange" tag="innname_error" style="display: none">请输入民宿名称</p>
+                            </td>
+                        </tr>
+                        <tr style="display: none">
+                            <th class="title">民宿类型</th>
+                            <td>
+                                <input id="inntype" name="inntype" type="text" placeholder="请选择"  class="inputbox mr5" style="" readonly="readonly" >
+                                <p class="orange" tag="inntype_error" style="display: none">请选择民宿类型</p>
+                            </td>
+                        </tr>
+                        <tr style="display: none">
+                            <th>所在地区</th>
+                            <td>
+                                <input  id="select_country" class="inputbox" name="country" type="text" readonly value="中国大陆" countryid="40" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>城市</th>
+                            <td><input  id="select_city"  class="inputbox" name="des" placeholder="请选择" readonly />
+                                <p class="orange" tag="des_error" style="display: none">请选择城市</p>
+                            </td>
+
+                        </tr>
+                        <tr style="display: none">
+                            <th>区域</th>
+                            <td>
+                                <input  id="select_area" name="area" class="inputbox" name="area" placeholder="请选择" readonly />
+                                <p class="orange" tag="area_error" style="display: none">请选择区域</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th>姓名</th>
+                            <td><input  class="inputbox" name="contact" placeholder=""/>
+                                <p class="orange" tag="contact_error" style="display: none">请输入姓名</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>手机号</th>
+                            <td>
+                                <input class="inputbox mr10" name="phone" placeholder="将作为登录帐号"/>
+                                <p class="orange" tag="phone_error" style="display: none">请输入手机号</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>图片验证码</th>
+                            <td>
+                                <input style="" class="inputboxsmall mr5" name="valid" id="valid" placeholder=""/>
+                                <img id="checkimg" src="pic/verifycode.png.html" class="icon-verifycode"/>
+                                <p class="orange" tag="valid_error" style="display: none">请输入图片验证码</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>短信验证码</th>
+                            <td>
+                                <input class="inputboxsmall mr5" name="verfiycode" placeholder=""/>
+                                <input type="button" value="发送验证码" tag="sendverfiy" class="btn fade code-btn" />
+                                <p class="orange" tag="verfiycode_error" style="display: none">请输入短信验证码</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp</th>
+                            <td><p tag="showinvitecode" style="text-decoration: underline;cursor:pointer">我有邀请码</p></td>
+                        </tr>
+                        <tr style="display:none" tag="invitecode">
+                            <th>邀请码</th>
+                            <td>
+                                <input  class="inputbox" name="invitecode" placeholder=""/>
+                                <p class="orange" tag="invitecode_error" style="display: none">邀请码错误</p>
+                            </td>
+                        </tr>
+                        <input class="inputbox" name="usersource" type="hidden" value=""/>
+                    </table>
+                    <input type="button" value="立即注册" class="btn fade register-btn" tag="register" style="width:270px" />
+                    <p class="t13 mt20 tc light">海外用户注册请联系 cs@miot.cn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end intro-->
+    <div id="footer" style="display: none">
+        <div class="copyright tc">2014 <a href="../../www.yunzhanggui.net/index.html">yunzhanggui.net</a></div>
+    </div>
+</div>
+<div id="inntypeform" class="com-suggest" style="top: 287px; left: 853.5px;display: none">
+    <a href="javascript:;" class="cls" tag="closebtn" title="关闭">×</a>
+    <ul class="com-suggest-content clx">
+        <li tag="oversea">
+            <div>
+                <div class="data">请选择：</div>
+                <div tag="country" class="item notitle">
+                        <a href="#?" class="radio" tag="inntype" value="1">客栈/民宿</a><a href="#?" class="radio" tag="inntype" value="2">青旅</a><a href="#?" class="radio" tag="inntype" value="3">公寓</a><a href="#?" class="radio" tag="inntype" value="4">酒店</a>                </div>
+            </div>
+        </li>
+    </ul></div>
+
+<div id="graylayer_my" class="graylayer" style="display:none;"></div>
+
+</body>
+
+<div id="signupsuccessPop" class="modal fade in signupsucc" style="display:none;">
+  <div class="modal-header"><a href="javascript:;" class="close" title="关闭" tag="closebtn">×</a>
+    <h3>注册成功</h3>
+  </div>
+  <div class="modal-body">
+      <div>
+        <p>恭喜您，注册成功。</p>
+        <p style="font-size:14px;">开始使用云掌柜吧，记得修改密码呦~<br/><span class="t12" tag="pwd">（初始密码：123456）</span></p>
+      </div>
+  </div>
+  <div class="modal-footer"><a class="btn btn-primary" href="../Book/index.html">开始使用云掌柜</a></div>
+</div>
+
+<div id="signupSuccessAppletPop" class="modal fade in signupsucc" style="display:none;">
+    <div class="modal-header"><a href="javascript:;" class="close" title="关闭" tag="closebtn">×</a>
+        <h3>注册成功</h3>
+    </div>
+    <div class="modal-body">
+        <div>
+            <p>恭喜您，注册成功。</p>
+            <p style="font-size:14px;">请使用电脑登陆（<a href="#?" tag="copy" id="copyUrl" data-clipboard-target="#website">https://v.yunzhanggui.net</a>）<br/>并完善民宿信息，记得修改密码呦~<br/><span class="t12" tag="pwd">（初始密码：123456）</span></p>
+        </div>
+    </div>
+    <div class="modal-footer" style="position: relative">
+        <input type="text" style="left:30%;width:20px;position: absolute" id="website" value="https://v.yunzhanggui.net/" />
+        <a class="btn btn-primary" style="position: relative" tag="back" href="#?">返回首页</a>
+    </div>
+</div>
+
+<!--选择国家-->
+<div id="countryPop" class="com-suggest" style="display:none;">
+    <a href="javascript:;" class="cls" tag="close" title="关闭">×</a>
+    <ul class="com-suggest-content clx">
+        <li tag="oversea">
+            <div>
+                <div class="data">请选择：</div>
+                <div tag="list" class="item notitle"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--选择城市-->
+<div id="cityPop" class="com-suggest com-city-suggest" style="display:none;">
+    <a href="javascript:;" class="cls" title="关闭" tag="closelist">×</a>
+    <ul class="com-suggest-tab clx">
+        <li><a href="#?" class="on" tag="tabHot">热门</a></li>
+        <li><a href="#?" class="" tag="tabAll">全部</a></li>
+    </ul>
+    <ul class="com-suggest-content clx">
+        <li tag="hot" class="on" style="display: block; ">
+            <div class="item notitle">
+                <!--<a href="javascript:;">丽江</a>-->
+            </div>
+        </li>
+        <li tag="all" class="" style="display: none; ">
+            <div tag="province" style="display: none; ">
+                <div class="data">请选择：</div>
+                <div tag="provincelist" class="item notitle" style="display: none; ">
+                    <!--<a href="javascript:;">北京</a>-->
+                </div>
+            </div>
+            <div tag="hasProvince" style="display: block; ">
+                <div class="data">已选择：<strong tag="disname">山西</strong><a href="javascript:;" class="edit" tag="editdis">[修改]</a></div>
+                <div class="item notitle" tag="hasProvincelist">
+                    <!--<a href="javascript:;">平遥</a>-->
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--选择城市-->
+<!--选择区域-->
+<div id="areaPop" class="com-suggest" style="display:none">
+    <a href="javascript:;" class="cls" title="关闭" tag="closelist">×</a>
+    <ul class="com-suggest-content clx">
+        <li class="on" style="display:block;">
+            <div class="item notitle item-w" tag="arealist">
+                <a href="javascript:;">大理古城</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--选择区域-->
+<div style="display:none" id="cnzz" accountid="1255171876">
+    <script src="https://s11.cnzz.com/z_stat.php?id=1255171876&web_id=1255171876" language="JavaScript" async="async"></script>
+</div>
+<script type="text/javascript" src="../jsmin/jquery1.8.2.min.js"></script>
+<script type="text/javascript" src="../jsmin/jquery-ui-ts=1206.js"></script>
+<script type="text/javascript" src="../jsmin/miot-ts=1206.js"></script>
+<script type="text/javascript" src="../jsmin/clipboard.min.js"></script>
+<script type='text/javascript' src='../jsmin/appletadapter-ts=1206.js'></script>
+<script type="text/javascript" src="../jsmin/citylist-1.2.1-ts=1206.js"></script>
+<script type='text/javascript' src='../pagejsmin/register-ts=1206.js'></script>
+<script>
+    function changeimg()
+    {
+        $("#checkimg").attr("src","/password/verifycode?i="+new Date().getMilliseconds());
+    }
+    $(document).ready(function(){
+        $("#checkimg").click(changeimg);
+        $("#changeimg").click(changeimg);
+    });
+    changeimg();
+    $(document).ready(function(){
+        var title='用户注册';
+        var op='v.yunzhanggui.net';
+        var desc='';
+        M.czcstatistics(title,op,desc);
+    });
+</script>
+</html>

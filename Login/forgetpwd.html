@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>找回密码</title>
+<link href="../css/signup-ts=1206.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script type="text/javascript" src="../jsmin/mobile-detect.min.js"></script>
+</head>
+<body>
+<div class="W_bg" id="content">
+    <!--back-->
+    <div id="back_header" class="g-header" style="display: none;">
+        <div class="main">
+            <a href="javascript:void(0);" class="icon return" id="returnurl"></a>
+            <strong>忘记密码</strong>
+        </div>
+    </div>
+    <!--/back-->
+    <!--header-->
+    <div id="header" class="shadow10" style="display: none">
+      <h1 class="length clx">
+        <a href="../Login.html" class="logo" title="回首页"></a>
+        <span class="slogan">民宿管理好帮手</span>
+      </h1>
+    </div>
+    <!--end header-->
+    <!--intro-->
+    <div >
+        <div class="main" id="passform">
+            <div class="main_cnt">
+              <div class="reg_box">
+                <h1 class="findword">找回密码</h1>
+                <!-- before start -->
+                <table id="validform" width="100%" border="0" cellspacing="0" cellpadding="0" class="innform innform-longer">
+                  <tr>
+                    <th class="title">手机号：</th>
+                    <td class="input"><input id="phone"  name="phone"  maxlength="11"  class="inputbox" value="" />
+                      <p class="orange" tag="phone_error" style="display: none"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>图片验证码：</th>
+                    <td>
+                      <input name="valid" id="valid" name="valid" class="inputboxsmall mr5"  placeholder="" value="">
+                      <img id="checkimg" src="" class="icon-verifycode">
+                      <p class="orange" tag="valid_error" style="display: none"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>短信验证码：</th>
+                    <td>
+                      <input id="validcode"  name="validcode" maxlength="6"  class="inputboxsmall mr5" value="" />
+                      <input id="sendvalidcode" type="button" value="发送验证码" class="btn fade code-btn"  />
+                      <input id="resendvalidcode" type="button" value="60秒后可重发" class="btn-no fade code-btn" style="display:none" />
+                      <p class="orange" tag="validcode_error" style="display: none"></p>
+                    </td>
+                  </tr>
+                    <tr>
+                    <th>&nbsp;</th>
+                    <td><input id="resetpass" type="button" value="立即重置密码" class="btn fade" style="width:170px;" /></td>
+                  </tr>
+                  </table>
+                  <!-- before end -->
+                 <!-- after start -->
+                <table id="resetpassform" width="100%" border="0" cellspacing="0" cellpadding="0" class="innform" style="display:none">
+                  <tr>
+                    <th colspan="2" class="tip-reset">请重新设置密码</th>
+                  </tr>
+                    <tr>
+                        <th class="title">用户名</th>
+                        <td width="" class="input" tag="username">sdfsdfsdfsd
+                        </td>
+                    </tr>
+                  <tr>
+                    <th class="title">新密码</th>
+                    <td width="" class="input"><input type="password" id="newpass" name="password" class="inputbox" value="" />
+                      <p class="orange" tag="password_error" style="display: none"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>确认新密码</th>
+                    <td class="input"><input id="confirmpass" name="confirmpass" type="password" class="inputbox" value="" />
+                      <p class="orange" tag="confirmpass_error" style="display: none"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <td>
+                    	<input id="submitpass" type="button" value="确定" class="btn fade" style="width:170px;" />
+                    </td>
+                  </tr>
+                  </table>
+                  <!--after end-->
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--end intro-->
+</div>
+</body>
+</html>
+<script type="text/javascript" src="../jsmin/jquery1.8.2.min.js"></script>
+<script type="text/javascript" src="../jsmin/miot-ts=1206.js"></script>
+<script type='text/javascript' src='../jsmin/appletadapter-ts=1206.js'></script>
+<script type="text/javascript" src="../pagejsmin/forgetpwd-ts=1206.js"></script>
+<script>
+  function changeimg()
+  {
+    $("#checkimg").attr("src","/password/verifycode?i="+new Date().getMilliseconds());
+  }
+  $(document).ready(function(){
+    $("#checkimg").click(changeimg);
+    $("#changeimg").click(changeimg);
+  });
+  changeimg();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31095543-3', 'yunzhanggui.net');
+  ga('send', 'pageview');
+</script>

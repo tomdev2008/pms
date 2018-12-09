@@ -1,0 +1,12 @@
+M.Page.ReportAllInn=M.createClass();M.extend(M.Page.ReportAllInn.prototype,{context:{},submittext:"处理中...",init:function(){this.initDOM();this.initEvent();},initDOM:function(){this.context.sales=$("#sales");this.context.adr=$("#adr");this.context.changetab=$("#change_tab");},initEvent:function(){this.context.sales.bind("click",this.sales_click.toEventHandler(this));this.context.adr.bind("click",this.adr_click.toEventHandler(this));this.context.changetab.bind("click",this.changetab_click.toEventHandler(this));},sales_click:function(e){window.location.href=this.context.sales.attr('tag');},adr_click:function(e){window.location.href=this.context.adr.attr('tag');},changetab_click:function(e){var obj=M.EventEle(e);var tag=obj.attr('tag');if(tag){var obj_li=obj.parent();}else{var obj_li=obj;}
+obj_li.parent().children().removeClass('on');obj_li.addClass('on');reportdata_finished({'datasource':reportdata},tag);},_closepopup:function()
+{M.ClosePopup();},destroy:function(){}});function createLine(xdata,ydata,caption,unit,neg){var wd=parseInt($('#highcharts').css('width'));var num=parseInt(wd/60);var xlen=xdata.length;$('#highcharts').highcharts({title:{text:caption+'趋势图',x:-20},xAxis:{categories:xdata,labels:{step:Math.ceil(xlen/num)}},yAxis:{title:{text:''},min:neg?null:0,plotLines:[{value:0,width:1,color:'#808080'}]},tooltip:{valueSuffix:unit},legend:{enabled:true,layout:'vertical',align:'right',verticalAlign:'middle',borderWidth:0,itemStyle:{fontWeight:'normal'},useHTML:true},credits:{enabled:false},series:ydata});var yy=$(".highcharts-xaxis-labels text[opacity='1']:first").attr('y');$(".highcharts-xaxis-labels text[opacity='1']").attr('y',yy);}
+function reportdata_finished(d,t)
+{var source=d.datasource;var xdata=[];var ydata=[];xdata=source.date;if(t=='1'){for(var k in source.sales){ydata.push(source.sales[k]);}
+var caption='营业收入';var unit=' 元';}else if(t=='2'){for(var k in source.rooms){ydata.push(source.rooms[k]);}
+var caption='实住房间数';var unit=' 间';}else if(t=='3'){for(var k in source.rate){ydata.push(source.rate[k]);}
+var caption='入住率';var unit=' %';}else if(t=='4'){for(var k in source.ave){ydata.push(source.ave[k]);}
+var caption='平均房价';var unit=' 元/间';}
+for(var k in ydata){var data_str="'"+ydata[k].data+"'";if(data_str.indexOf('-')>0){var mark=1;}}
+if(mark==1){createLine(xdata,ydata,caption,unit,-1);}else{createLine(xdata,ydata,caption,unit);}}
+M.ready(function(){reportdata_finished({'datasource':reportdata},1);var allinn=new M.Page.ReportAllInn();return allinn;});

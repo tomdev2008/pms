@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>登录云掌柜</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="keywords" content="客栈-客栈民宿"/>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="../css/miot-ts=1206.css" rel="stylesheet" type="text/css" />
+    <link href="../css/login-ts=1206.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">.graylayer{position:absolute; width:100%; height:100%; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,.4);}
+    </style>
+</head>
+<div class="new moganshan">
+    <div class="header">
+        <div class="wrapper">
+            <h1 class="logo clx">
+                <a href="../../www.yunzhanggui.net/index.html" class="logo-pic"></a>
+                <span class="logo-word">民宿管理和营销平台</span>
+            </h1>
+            <div class="tools">
+                <div class="inner"><i></i>下载手机版APP</div>
+                <div class="box">
+                    <img src="../pic/new_appqr-t=201511241630.png" alt="二维码" />
+                    <p>扫描二维码，下载APP</p>
+                </div>
+            </div>
+            <div class="text">已有<strong>112784</strong>家客栈、公寓和青旅正在使用</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <div class="bigpic"></div>
+            <div class="main">
+                <form id="login_form" name="login_form" action="login.html" method="post" >
+                    <ul class="login" style="height:350px;">
+                        <li class="mb20"><h2><a href="../Signup/index.html">注册云掌柜帐号</a><span>登录</span></h2></li>
+                        <li class="mb10"><div><label class="username"></label><input id="username" name="username" class="text" value="" placeholder="用户名" /></div></li>
+                        <li class="mb10"><div><label class="password"></label><input type="password" class="text"  id="password" name="password" value="" placeholder="密&nbsp;&nbsp;&nbsp;码" ></div></li>
+                        <li class="mb10 valid"><div>
+                        <input name="valid" class="text placeholder-valid" placeholder="验证码" value="">
+                        <img id="checkimg" src="" style="width:150px;height:40px;vertical-align:middle; margin:-4px 0 0 0px;">
+                        <!--<a id="changeimg" style="color:#999" href="#?">换一张</a></div></li>-->
+                        <li><input type="submit" value="登录" class="btn" /></li>
+                        <li class="tr" style="display:block;">
+                            <a href="forgetpwd.html">忘记密码?</a>
+                        </li>
+                    </ul>
+                    <input type="hidden" name="login" value="1"/>
+                </form>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="download">
+        <div class="wrapper">
+            <span class="t12">推荐使用以下浏览器访问云掌柜：</span>
+            <a href="http://se.360.cn/" target="_blank" class="downlink" title="点击下载"><span class="se360"></span>360安全浏览器下载</a>
+            <a href="http://www.yunzhanggui.net/download/ChromeStandaloneSetup.exe" class="downlink" title="点击下载"><span class="chrome"></span>Chrome谷歌浏览器下载</a>
+            <div class="qrcode">
+                <div class="text">关注我们</div>
+                <div class="text"><i class="ic-weibo"></i><a href="http://weibo.com/u/5136886253" target="_blank">新浪微博</a></div>
+                <div class="text"><i class="ic-wechat"></i>微信公众号</div>
+                <div class="qr"></div>
+                <span class="contactus">联系我们<i>400-002-1566</i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<!--选择国家-->
+<div id="countrybox" class="com-suggest" style="display:none;">
+    <a href="javascript:;" class="cls" tag="close" title="关闭">×</a>
+    <ul class="com-suggest-content clx">
+        <li tag="oversea">
+            <div>
+                <div class="data">请选择：</div>
+                <div tag="list" class="item notitle"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--选择城市-->
+<div id="cityList" class="com-suggest" style="display:none;">
+    <a href="javascript:;" class="cls" title="关闭" tag="closelist">×</a>
+    <ul class="com-suggest-tab clx">
+        <li><a href="#?" class="on" tag="tabHot">热门</a></li>
+        <li><a href="#?" class="" tag="tabAll">全部</a></li>
+    </ul>
+    <ul class="com-suggest-content clx">
+        <li tag="hot" class="on" style="display: block; ">
+            <div class="item notitle">
+                <a href="javascript:;">丽江</a>
+            </div>
+        </li>
+        <li tag="all" class="" style="display: none; ">
+            <div tag="province" style="display: none; ">
+                <div class="data">请选择：</div>
+                <div tag="provincelist" class="item notitle" style="display: none; ">
+                    <a href="javascript:;">北京</a>
+                </div>
+            </div>
+            <div tag="hasProvince" style="display: block; ">
+                <div class="data">已选择：<strong tag="disname">山西</strong><a href="javascript:;" class="edit" tag="editdis">[修改]</a></div>
+                <div class="item notitle" tag="hasProvincelist">
+                    <a href="javascript:;">平遥</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--选择城市-->
+<!--选择区域-->
+<div id="areaList" class="com-suggest" style="display:none">
+    <a href="javascript:;" class="cls" title="关闭" tag="closelist">×</a>
+    <ul class="com-suggest-content clx">
+        <li class="on" style="display:block;">
+            <div class="item notitle item-w" tag="arealist">
+                <a href="javascript:;">大理古城</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--选择区域-->
+<script type="text/javascript" src="../jsmin/jquery1.8.2.min.js"></script>
+<script type="text/javascript" src="../jsmin/miot-ts=1206.js"></script>
+<script type="text/javascript" src="../pagejsmin/login-ts=1206.js"></script>
+<script type='text/javascript' src="../jsmin/citylist-1.2.1-ts=1206.js"></script>
+<script type="text/javascript">
+    var page;
+    M.ready(function () {
+        page = new M.Page.LoginPage();
+        return page;
+    });
+    function changeimg()
+    {
+    	$("#checkimg").attr("src","/login/verifycode?i="+new Date().getMilliseconds());
+    }
+    $(document).ready(function(){
+    	$("#checkimg").click(changeimg);
+    	$("#changeimg").click(changeimg);
+    });
+    changeimg();
+</script>
+<script type="text/javascript">
+	window.onload=function(){
+			};
+</script>
+<div style="display:none" id="cnzz" accountid="1255171876">
+	<script src="" language="JavaScript" async="async"></script>
+</div>

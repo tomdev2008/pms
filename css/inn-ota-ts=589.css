@@ -1,0 +1,243 @@
+/*OTA link*/
+.cntbox-ota .divider {padding-bottom:10px; margin-bottom:10px; border-bottom:1px dashed #e4e4e4;}
+.cntbox-ota .inninfo li {padding:5px 0px; overflow:hidden; font-size:14px;}
+.cntbox-ota .inninfo li .lab {display:inline-block; width:80px; font-size:14px;}
+.cntbox-ota .inninfo li .lab-w {width:160px;}
+
+/*OTA room mapping*/
+.room-mapping {padding:10px 10px 20px 0;}
+.room-mapping .room-row {float:left; width:200px;}
+.room-mapping .room-linked {width:65%; margin-right:30px;}
+.room-mapping .room-fixed {position:fixed; top:60px;}
+.room-row .header {height:20px; padding:5px 10px; background:#fff; border-bottom:2px solid #ddd; border-left:5px solid #00b181; font-size:14px; line-height:20px;}
+.room-row .room-content {padding-left:15px;}
+.room-row .room-content .single {float:left; width:45%; margin-bottom:10px; margin-right:10px; position:relative;}
+.room-row .single .msgAlert {position:absolute; left:0; right:0; cursor:default;}
+.room-row .single .in {bottom:-30px;}
+.room-row .room-block li {float:left; height:20px; padding:2px 10px; margin:0 5px 5px 0; background:#fff; border:1px solid #ccc; border-radius:10px; text-align:center; cursor:default; position:relative;}
+.room-linked .room-block li {background:#fff; border-color:#999;}
+.room-row .room-block .move {background:#f5f5f5; border:1px solid #ccc; cursor:move;}
+.room-row .room-block .move:hover {border-color:#009f7b}
+.room-row .room-block .add {background:#fff; border:1px solid #00b181; color:#00b181; cursor:pointer; -webkit-transition:all .2s ease-in; -moz-transition:all .2s ease-in; transition:all .2s ease-in;}
+.room-row .room-block .add:hover {border-color:#45d6af; color:#45d6af;}
+.room-row .room-block .ui-sortable-helper {opacity:.7; border-color:#568e42;}
+.room-row .room-block li .text {font-size:14px; white-space:nowrap;}
+.room-row .room-block .linked {display:block; color:#C00; margin-top:25px; text-align:center;}
+.room-row .room-block .linked-airbnb{margin-top:0; line-height: 30px;}
+.room-linked .room-block {min-height:130px; padding:5px; background:#fff; border:1px dashed #ccc; border-radius:5px; overflow:hidden;}
+.room-linked .room-block-sl {min-height:30px;}
+.room-linked .table td {vertical-align:middle;}
+.room-linked .room-block-tip {background:#fff url("../pic/bg-room-mapping-t=201507011830.png") no-repeat center;}
+.room-linked .room-block-error {border-color:#eb7070;}
+.room-linked .single-header {height:20px; padding-top:10px; margin-bottom:5px; position:relative;}
+.room-linked .single-header span {float:left; max-width:70%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:14px;}
+.room-linked .single-header .setprice{ position: absolute;right: 0px; text-decoration: none!important; cursor:pointer;}
+.room-linked .single-header .ip-dropdown {top:4px; right:-6px; z-index:1;}
+.room-linked .single-header .ip-dropdown div span,
+.room-linked .single-header .ip-dropdown div a {float:none; text-align:right;}
+.room-linked .single-header .ip-dropdown div span {display:block; max-width:none; padding:5px; color:#00b181; font-size:12px;}
+.room-linked .sh-full span {max-width:100%;}
+.room-linked .single-header a {float:left;}
+.room-linked .single-header a.gocipher{float:right; text-decoration: underline;}
+.room-yunzhanggui .room-block {margin-top:30px; padding-bottom:10px;}
+
+.room-fullwidth .room-row {float:none;}
+.room-fullwidth .room-linked {width:100%;}
+.room-fullwidth .room-row .room-content .single {margin-right:4%;}
+.room-linked .single .droplist{position: absolute; right: 0;top: 6px;}
+.room-linked .header-sel{padding-top: 15px; padding-bottom: 5px;}
+.room-linked .yzg-mulcolumnlist-catalog .yzg-mulcolumnlist-heightfixed,.room-linked .yzg-mulcolumnlist-content{min-height: 150px;}
+.room-linked .yzg-mulcolumnlist-heightfixed{height: 150px;}
+
+
+/*OTA room*/
+.setotaroom {width:760px; margin-left:-380px;}
+.setotaroomWide {width:960px; margin-left:-480px;}
+.setotaroom .modal-body{max-height:450px; padding:5px 15px 15px 15px}
+.setotaroom .nav-tabs a {font-size:12px;}
+.tabbable .date-tools {position:static; float:right; width:130px; height:33px; border-top:1px solid #ccc; border-left:1px solid #ccc; box-shadow:none;}
+.tabbable .date-tools .range {width:92px;}
+.tabbable .date-tools .range p {padding-top:2px;}
+.tabbable .date-tools .prev, .tabbable .date-tools .next {height:33px; background-position:0 -3px;}
+.tabbable .ota-option {float:right;}
+.tabbable .ota-option .droplist {padding-top:2px; padding-bottom:2px;}
+.table thead th {background-color:#3bc8a7;}
+.table-otarooms th, .table-otarooms td {border-right:1px solid #ddd; font-size:12px;}
+.table-otarooms tr:hover{background:none}
+.table-otarooms th:last-child, .table-otarooms td:last-child {border-right:0;}
+.table-otarooms .editable, .table-otarooms .closed {cursor:pointer;}
+.table-otarooms .editable:hover, .table-otarooms .closed:hover {background-color:#fccf78;}
+.table-otarooms .closed {background-color:#dbdbdb;}
+.table-otarooms .room-full {background-color:#eb4747 !important; color:#fff;}
+
+/*OTA Box*/
+.otaBox li {float:left; width:184px; min-height:135px; margin-bottom:30px; padding:0 25px; border-bottom:1px dotted #ccc;}
+.otaBox li .logo {margin-bottom:10px;}
+.otaBox li .logo a {display:block; width:180px; height:75px; border:2px solid #d5d5d5; background:url("../pic/logo-ota-t=201507011830.png") no-repeat; font-size:0; line-height:0; overflow:hidden;}
+.otaBox li .logo a:hover {opacity:.7;}
+.otaBox li .logo .ota-elong  {background-position:0 0;}
+.otaBox li .logo .ota-ctrip  {background-position:0 -75px;}
+.otaBox li .logo .ota-qunar  {background-position:0 -150px;}
+.otaBox li .logo .ota-taobao {background-position:0 -225px;}
+.otaBox li .logo .ota-meituan{background-position:0 -300px;}
+.otaBox li .logo .ota-17u    {background-position:0 -375px;}
+.otaBox li .logo .ota-qmango {background-position:0 -450px;}
+.otaBox li .logo .ota-booking{background-position:0 -525px;}
+.otaBox li .logo .ota-agoda  {background-position:0 -600px;}
+.otaBox li .logo .ota-lashou  {background-position:0 -675px;}
+.otaBox li .logo .ota-wowotuan  {background-position:0 -750px;}
+.otaBox li .logo .ota-lemon  {background-position:0 -825px;}
+.otaBox li .logo .ota-91kezhan  {background-position:0 -900px;}
+.otaBox li .logo .ota-becod  {background-position:0 -975px;}
+.otaBox li .logo .ota-nuomi  {background-position:0 -1050px;}
+.otaBox li .logo .ota-tujia  {background-position:0 -1125px;}
+.otaBox li .link .btn {width:122px;}
+.otaBox li .link .ico-question {display:inline-block; width:16px; height:16px; margin-left:10px; background:url("../pic/icon-symbol-t=201507011830.png") no-repeat; vertical-align:-3px; *vertical-align:middle; cursor:pointer;}
+.otaBox li .link .ico-question:hover {opacity:.7;}
+.otaBox li .link .btn-waiting, .otaBox li .link .btn-waiting:hover {cursor:default; background-color:#e6e6e6; background-repeat:repeat-x; border:1px solid #ccc; *border:0; border-color:#e6e6e6 #e6e6e6 #bfbfbf; border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25); border-bottom-color:#b3b3b3; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffff',endColorstr='#ffe6e6e6',GradientType=0); filter:progid:DXImageTransform.Microsoft.gradient(enabled=false); *zoom:1; -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05); -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05); box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05)}
+.otaBox li .note {width:170px; height:40px; margin-bottom:10px; resize:vertical;}
+
+/*OTA List*/
+.otaList li {float:left; width:232px; height:149px; margin:10px 15px 20px; box-shadow:0 0 2px rgba(0,0,0,.3); position:relative;}
+.freeChannel li{height:130px;}
+.otaList li .icon-green{position:absolute; right:0; top:0; width:50px; height:50px; background:url("../pic/icon-green-t=201708141535.png") no-repeat center center; background-size:50px 50px;}
+.otaList li .icon-orange{position:absolute; right:0; top:0; width:50px; height:50px; background:url("../pic/icon-orange-t=201708141535.png") no-repeat center center; text-align: center; background-size:50px 50px;}
+.otaList li .icon-red{position:absolute; right:0; top:0; width:50px; height:50px; background:url("../pic/icon-red-t=201708141535.png") no-repeat center center; background-size:50px 50px;}
+.otaList li .icon-gray{position:absolute; right:0; top:0; width:50px; height:50px; background:url("../pic/icon-gray-t=201802071435.png") no-repeat center center; background-size:50px 50px;}
+.otaList li .icon-limit{padding:3px 0;}
+.otaList li span i{font-size: 11px;display: block;font-style: normal;color: #fff;transform: rotate(45deg);text-align: center;line-height: 24px;padding-left: 14px;}
+.otaList li .logo a {display:block; padding:20px 0;}
+.otaList li .logo a i {display:block; width:180px; height:75px; margin:0 auto; background:url("../pic/logo-ota-t=201811161444.jpg") no-repeat;}
+.otaList li .logo a:hover {opacity:.7;}
+.otaList li .logo .ota-elong  {background-position:0 0;}
+.otaList li .logo .ota-ctrip  {background-position:0 -75px;}
+.otaList li .logo .ota-qunar  {background-position:0 -150px;}
+.otaList li .logo .ota-taobao {background-position:0 -225px;}
+.otaList li .logo .ota-meituan{background-position:0 -300px;}
+.otaList li .logo .ota-17u    {background-position:0 -375px;}
+.otaList li .logo .ota-qmango {background-position:0 -450px;}
+.otaList li .logo .ota-booking{background-position:0 -525px;}
+.otaList li .logo .ota-agoda  {background-position:0 -600px;}
+.otaList li .logo .ota-lashou  {background-position:0 -675px;}
+.otaList li .logo .ota-wowotuan  {background-position:0 -750px;}
+.otaList li .logo .ota-lemon  {background-position:0 -825px;}
+.otaList li .logo .ota-91kezhan  {background-position:0 -900px;}
+.otaList li .logo .ota-becod  {background-position:0 -975px;}
+.otaList li .logo .ota-nuomi  {background-position:0 -1050px;}
+.otaList li .logo .ota-tujia  {background-position:0 -1125px;}
+.otaList li .logo .ota-alitrip  {background-position:0 -1500px;}
+.otaList li .logo .ota-yzgdx  {background-position:0 -1275px;}
+.otaList li .logo .ota-airbnb  {background-position:0 -1350px;}
+.otaList li .logo .ota-expedia  {background-position:0 -1425px;}
+.otaList li .logo .ota-feizhu  {background-position:0 -1500px;}
+.otaList li .logo .ota-hecheng  {background-position:0 -1575px;}
+.otaList li .logo .ota-jihe  {background-position:0 -1650px;}
+.otaList li .logo .ota-xiaozhu  {background-position:0 -1725px;}
+.otaList li .logo .ota-weila  {background-position:0 -1800px;}
+.otaList li .logo .ota-msk  {background-position:0 -1875px;}
+.otaList li .logo .ota-zhisu  {background-position:0 -1950px;}
+.otaList li .logo .ota-jsyx  {background-position:0 -2025px;}
+.otaList li .logo .ota-zhenguo  {background-position:0 -2100px;}
+
+.otaList li .link {position:relative; height:34px;}
+.otaList li .link .btn {position:absolute; left:0; right:0; bottom:0; z-index:1; border-width:1px 0 0 0;}
+.otaList li .link .ico-question {display:inline-block; width:16px; height:16px; background:url("../pic/icon-symbol-t=201507011830.png") no-repeat; cursor:pointer; position:absolute; right:8px; top:-20px; z-index:2;}
+.otaList li .link .ico-question:hover {opacity:.7;}
+.freeChannel li .ico-question {display:inline-block; width:16px; height:16px; background:url("../pic/icon-symbol-t=201801251057.png") no-repeat; cursor:pointer; position:absolute; right:8px; bottom:15px; z-index:2;}
+.freeChannel li .ico-question:hover {opacity:.7;}
+.otaList li .link .btn-waiting, .otaList li .link .btn-waiting:hover {cursor:default; background-color:#e6e6e6; border:1px solid #ccc; border-color:#e6e6e6 #e6e6e6 #bfbfbf; border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25); border-bottom-color:#b3b3b3; box-shadow:none;}
+.otaList li .note {width:170px; height:40px; margin-bottom:10px; resize:vertical;}
+
+/*doorlock mapping*/
+.lock-mapping .room-block-tip {background-image:url("../pic/bg-lock-mapping-t=201507011830.png");}
+.lock-mapping .room-content .single {width:30%;}
+.lock-mapping .room-linked {width:70%;}
+.lock-mapping .room-linked .room-block {min-height:0; height:40px;}
+.lock-mapping .room-linked .single-header span {max-width:55%;}
+.lock-mapping .room-linked .single-header a {float:right;}
+
+.mb10{margin-bottom: 10px;}
+
+.cntbox-ota .showmore {margin-left:10px; font-size:12px; color:#999; text-decoration:underline; position:relative;}
+.cntbox-ota .showmore .example{width: 486px;height: 153px;position: absolute;left: 45px;border: 1px solid #ccc;top: -60px;display: none;border-radius: 10px;}
+.cntbox-ota .showmore .example img{border-radius: 10px;}
+.cntbox-ota .showmore .example:before, .cntbox-ota .showmore .example:after {content:''; display:block; width:0; height:0; border:8px solid transparent;border-right-color:#ccc; position:absolute; top:60px;}
+.cntbox-ota .showmore .example:before{left:-16px;}
+.cntbox-ota .showmore .example:after{left:-15px; border-right-color:#fff;}
+.cntbox-ota .certificate {float:left; width:70px; height:70px; border:1px solid #e5e5e5; margin:0 20px 10px 0; position:relative;}
+.cntbox-ota .certificate .delete{display:none; width:20px; height:20px; background:url("../pic/ico-delete-20-t=201507011830.png") no-repeat; position:absolute; right:-10px; top:-10px;}
+.cntbox-ota .certificate img{height:100%;}
+.cntbox-ota .certificate:hover{border-color:#009f7b;}
+.cntbox-ota .certificate:hover .delete{display:block;}
+.cntbox-ota .addpic{border:1px dashed #e5e5e5; position:relative; cursor:pointer;}
+.cntbox-ota .addpic:hover .delete{display:none;}
+.cntbox-ota .addpic:before{content: '';display: block;width: 40px;height: 1px;background-color: #e5e5e5;position: absolute; top: 35px;left: 15px;}
+.cntbox-ota .addpic:after{content:'';display: block;width: 1px;height: 40px;background-color: #e5e5e5;position: absolute; top: 15px;left: 35px;}
+.cntbox-ota .addpic .ph {color:#999; margin-left:5px;}
+.cntbox-ota .process {width:70px; height:20px; padding:25px 0; border:1px solid #ccc; background-color:#f3f3f3; text-align: center;}
+.cntbox-ota .process span {font-size:12px; color:#777; line-height:20px; white-space:nowrap;}
+.cntbox-ota .pic-tip{display:inline-block; vertical-align:middle; padding-top:25px; color:#777;}
+.addphotos .cntbox-ota .certificate{width:140px; height:140px;}
+.addphotos .cntbox-ota .addpic:before{content: '';display: block;width: 80px;height: 1px;background-color: #e5e5e5;position: absolute; top: 70px;left: 30px;}
+.addphotos .cntbox-ota .addpic:after{content:'';display: block;width: 1px;height: 80px;background-color: #e5e5e5;position: absolute; top: 30px;left: 70px;}
+
+.qnxy{font-size:14px; text-decoration:underline;}
+
+.modal-table{padding:15px;}
+.modal-table table{width:100%;}
+.modal-table tr th,.modal-table tr td{padding: 8px;line-height: 20px;font-size: 14px;text-align: left;vertical-align: top;border-top: 1px dotted #ddd;word-break: break-all;word-wrap: break-word;}
+.modal-table tr th{vertical-align: bottom;background-color: #f2f2f2;font-weight: bold;}
+.modal-homestyle{width:30%;}
+
+.ico-sale-house{position:absolute; right:-18px; top:-12px;}
+.rule-yzg-black{color:#000;}
+.rule-yzg-black:hover{color:#999;}
+
+.howtogetid{position:relative;}
+.howtogetid i{display: none; width:794px; height:535px; background:url("../pic/howtogetid.png") no-repeat center center; position:absolute; z-index: 10000; left:110px; top:-200px; border:1px solid #ccc;}
+.howtogetid:hover i{display: block;}
+
+.service-time a{display: inline-block; padding:5px 15px; border:1px solid #ccc; color:#666; margin-right:10px;}
+.service-time a.active{border:1px solid #00b181; background:url("../pic/right-line.png") no-repeat right bottom}
+.service-time .service-time-link{border:none; font-size:13px; color:#00b181; text-decoration: underline; padding:5px;}
+.service-time .service-time-link:hover{color:#006d54;}
+.limit-date{position: absolute;left: 0;right: 0;bottom: 0;z-index: 1;border-width: 1px 0 0 0;}
+.cntbox .limit-date{padding: 4px 15px;line-height: 24px;font-size: 13px;}
+.fee-notice{display: inline-block; padding:5px 10px 5px 5px; border:2px dashed #4daee2; margin-left:10px;}
+.fee-notice a{text-decoration: underline;}
+.icon-horn{display: inline-block; width:20px; height:20px; background:url("../pic/icon-horn.png") no-repeat center center; background-size:20px 20px; vertical-align: -3px; margin:0 5px 0 5px;}
+
+.fl-left{float:left; font-size:14px; width:14%;}
+.fl-right{float:left; width:75%;}
+.link-roomtypename{float: left; width:33%;}
+.link-roomtypename span{display: inline-block; width:100px; vertical-align: middle; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-left:3px;}
+.view-more i{display:inline-block; width:12px; height:12px; background:url("../pic/icon-more.png") no-repeat center center; background-size:12px 12px; vertical-align: -1px;}
+.view-more:hover i{background:url("../pic/icon-more-hover.png") no-repeat center center; background-size:12px 12px;}
+
+.subchannels{position:relative; width:510px; background:#fff; margin-top:10px; border:1px solid #e5e5e5;}
+.subchannels .arrow,.subchannels .arrow-b {width: 0;height: 0;border-width: 8px;border-style: solid;position: absolute;left: 35px;}
+.subchannels .arrow {border-color: transparent transparent #fff transparent;top: -15px;}
+.subchannels .arrow-b {border-color: transparent transparent #e5e5e5 transparent;top: -16px;}
+.subchannels .wrapper{padding:15px;}
+.channels-wrap{margin-bottom:10px;}
+.subchannels tt{display: inline-block; width:80px; line-height: 28px; text-align: right; font-size:14px; vertical-align: top; }
+.channels-group{display: inline-block; width:380px;}
+.service-time{display: inline-block; width:300px;}
+.wid125{display: inline-block; width:115px; line-height: 28px;}
+.wid70{display: inline-block; width:70px; line-height: 28px;}
+
+.modal.modal-touch{width:300px; margin-left:-150px;}
+.modal-touch .modal-body{padding:30px 0 40px;}
+.modal-touch ul li{text-align: center;}
+.modal-touch ul li p{font-size:14px;}
+.modal-touch ul li .icon-person{display: block; width:40px; height:40px; background:url("../pic/icon-person-t=201708141640.png") no-repeat center center; margin:10px auto;} 
+.modal-touch ul li .btn-click{display: block; width:90px; height:28px; line-height: 28px; color:#fff; background:#00a07a; border-radius: 20px; margin:10px auto; }
+.modal-touch ul li .btn-click:hover{background:#006d54;}
+
+.contact-person{display: block; width:63px; height:66px; background:url("../pic/contact-person-t=201708141622.png") no-repeat center center; margin:0 auto;}
+.btn-contact{display: block; width:90px; height:30px; line-height: 30px; text-align: center; color:#fff; background:#00a07a; border-radius: 20px; margin:-1px auto 5px;}
+.btn-contact:hover{background:#006d54; color:#fff;}
+
+.notice{font-style:italic; font-size:13px;}
+.notice .icon-horn-green{display: inline-block; width:15px; height:12px; background:url("../pic/icon-horn-green-t=201708151545.png") no-repeat center center; margin-right:5px; vertical-align: -1px;}
+.notice a{text-decoration: underline; font-size:13px;}

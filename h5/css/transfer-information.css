@@ -1,0 +1,30 @@
+@charset "UTF-8";
+input{ box-shadow:0;border-radius:0;}
+.global-wid1000{width:800px; margin:0 auto;}
+.g-form-title{height:80px; background:#999900; padding:0 30px; line-height:80px; color:#fff;}
+.g-form-title h2{height:80px; line-height:80px; color:#fff;}
+.infor-tip{padding:10px 0; font-weight:400;  font-size:16px;}
+.infor-write{display:block; width:100%; height:auto; padding:8px; box-sizing:border-box; border:1px solid #ccc; font-size:14px;}
+.infor-place{width:100px; font-size:14px;}
+.infor-des{width:100%; display:block; height:auto; min-height:80px; box-sizing: border-box;}
+.infor-btn{display:inline-block; width:200px; height:40px; line-height:40px; text-align:center; color:#fff; background:#169bd5; border-radius:5px;}
+.mask {position: fixed;width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);left: 0;top: 0;z-index: 99998;}
+.page{width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: 99999;}
+.page-content{width: 300px;background: #fff;position: absolute;left: 50%;top: 30%;margin-left: -150px;border-radius: 5px;box-sizing: border-box;padding:40px 30px 70px;}
+.page-content .infor-btn{position:absolute; left:50%; margin-left:-50px; bottom:20px; width:100px;}
+.page-content .closebtn{position: absolute;right: 10px;top: 10px;width: 24px;height: 24px;border-radius: 50%;border: 1px solid #ccc;line-height: 24px;text-align: center;font-size: 20px;font-weight: normal;color: #ccc;font-family: "Open Sans";cursor: pointer;}
+@media (max-width:800px){
+.global-wid1000{width:100%; margin；0 auto;}
+.g-form-title{height:60px; background:#999900; padding:0 20px; line-height:60px; color:#fff;}
+.g-form-title h2{height:60px; line-height:60px; color:#fff;}
+.infor-tip{padding:5px 0; font-size:14px;}
+.infor-place{width:50px; font-size:14px;}
+.area{font-size:14px;}
+.infor-write{padding: 5px 0;}
+.infor-btn{width:100px; height:40px; line-height:40px;}
+.mask {position: fixed;width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);left: 0;top: 0;z-index: 99998;}
+.page{width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: 99999;}
+.page-content{width: 300px;background: #fff;position: absolute;left: 50%;top: 30%;margin-left: -150px;border-radius: 5px;box-sizing: border-box;padding:40px 30px 70px;}
+.page-content .infor-btn{position:absolute; left:50%; margin-left:-50px; bottom:20px;}
+.page-content .closebtn{position: absolute;right: 10px;top: 10px;width: 24px;height: 24px;border-radius: 50%;border: 1px solid #ccc;line-height: 24px;text-align: center;font-size: 20px;font-weight: normal;color: #ccc;font-family: "Open Sans";cursor: pointer;}
+}

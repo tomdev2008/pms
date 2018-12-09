@@ -1,0 +1,1 @@
+$(document).ready(function(){jQuery('#type_tree').click(function(){jQuery('#type_1').css('display','block');jQuery('#type_2').css('display','none');});jQuery('#type_bing').click(function(){jQuery('#type_1').css('display','none');jQuery('#type_2').css('display','block');});});

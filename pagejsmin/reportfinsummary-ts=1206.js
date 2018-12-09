@@ -1,0 +1,1 @@
+﻿M.Page.ReportFinSummary=M.createClass();M.extend(M.Page.ReportFinSummary.prototype,{context:{},init:function(){this.initDOM();this.initEvent();},initDOM:function(){this.context.fromdate=$("#fromdate");this.context.enddate=$("#enddate");this.context.datevallist=$("#datevallist");},initEvent:function(){}});M.ready(function(){page=new M.Page.ReportFinSummary();return page;});
